@@ -1,0 +1,9 @@
+version: '0.1'
+services:
+  image-resizer-cli:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app
+    command: python3 main.py
